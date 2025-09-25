@@ -1,0 +1,14 @@
+name: Python Hello World Demo
+
+on: [push]
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Python Hello World
+        run: python hello.py
+
